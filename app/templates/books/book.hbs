@@ -1,0 +1,10 @@
+<h2>SINGLE Book</h2>
+
+<p>Title: {{model.title}}</p>
+<p>Description: {{model.description}}</p>
+<hr>
+<p>Author: {{#link-to 'authors.author' model.author}}{{model.author.name}}{{/link-to}}</p>
+<p>Publisher: {{#link-to 'publishers.publisher' model.publisher}}{{model.publisher.name}}{{/link-to}}</p>
+
+<hr>
+{{#link-to 'books'}}Back to all books{{/link-to}}

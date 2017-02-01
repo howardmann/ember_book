@@ -1,0 +1,4 @@
+<h2>ALL Books</h2>
+{{#each model as |book|}}
+<p>{{#link-to 'books.book' book}}{{book.title}}{{/link-to}}</p> 
+{{/each}}

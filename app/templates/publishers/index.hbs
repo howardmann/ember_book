@@ -1,0 +1,7 @@
+<h2>ALL Publishers</h2>
+
+{{#each model as |publisher|}}
+  {{#link-to 'publishers.publisher' publisher}}
+    <p>{{publisher.name}}</p>
+  {{/link-to}}
+{{/each}}

@@ -1,0 +1,8 @@
+<h2>SINGLE Author</h2>
+
+<p>Name: {{model.name}}</p>
+<p>Age: {{model.age}}</p>
+<p>Publisher: {{#link-to 'publishers.publisher' model.publisher}}{{model.publisher.name}}{{/link-to}}</p>
+
+<hr>
+{{#link-to 'authors'}}Back to all authors{{/link-to}}

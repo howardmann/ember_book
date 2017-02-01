@@ -1,0 +1,7 @@
+<h2>ALL Authors</h2>
+
+{{#each model as |author|}}
+  {{#link-to 'authors.author' author}}
+    <p>{{author.name}}</p>
+  {{/link-to}}
+{{/each}}

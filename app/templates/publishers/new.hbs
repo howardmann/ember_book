@@ -1,0 +1,12 @@
+<h2>NEW Publisher</h2>
+
+<form {{action 'createPublisher' model on='submit'}}>
+  <p>Name:</p>
+  <p>{{input type="text" value=model.name}}</p>
+
+  <p>Country:</p>
+  <p>{{input type="text" value=model.country}}</p>
+
+  <p><input type="submit" value="CREATE"></p>
+
+</form>

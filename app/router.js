@@ -11,11 +11,13 @@ Router.map(function() {
     this.route('publisher', {
       path: ':publisher_id'
     });
+    this.route('new');
   });
   this.route('authors', function() {
     this.route('author', {
       path: ':author_id'
     });
+    this.route('new');
   });
   this.route('books', function() {
     this.route('book', {

@@ -1,0 +1,18 @@
+<h2>NEW Author</h2>
+<form {{action 'createAuthor' model.author on='submit'}}>
+  <p>Name:</p>
+  <p>{{input type="text" value=model.author.name}}</p>
+
+  <p>Age:</p>
+  <p>{{input type="number" value=model.author.age}}</p>
+
+  <p>Publisher:</p>
+  <select {{action 'changed' model.author on='change'}}>
+    {{#each model.publishers as |publisher|}}
+      <option value="{{publisher.id}}">{{publisher.name}}</option>
+    {{/each}}
+  </select>
+
+  <p><input type="submit" value="CREATE"></p>
+
+</form>

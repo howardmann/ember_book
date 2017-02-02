@@ -1,0 +1,6 @@
+<hr>
+
+<p>Name: {{one-way-input value=model.name update=(action (mut model.name))}}</p>
+<p>Country: {{one-way-input value=model.country update=(action (mut model.country))}}</p>
+
+<button {{action 'save'}}>Save</button>

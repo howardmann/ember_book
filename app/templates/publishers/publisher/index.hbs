@@ -1,0 +1,31 @@
+<h2>SINGLE Publisher</h2>
+
+<p>Name: {{model.name}}</p>
+<p>Country: {{model.country}}</p>
+
+<hr>
+<p>Authors:</p>
+<ul>
+  {{#each model.authors as |author|}}
+    <li>
+      {{#link-to 'authors.author' author}}
+        {{author.name}}
+      {{/link-to}}
+    </li>
+  {{/each}}
+</ul>
+
+<p>Books:</p>
+<ul>
+  {{#each model.books as |book|}}
+    <li>
+      {{#link-to 'books.book' book}}
+        {{book.title}}
+      {{/link-to}}
+    </li>
+  {{/each}}
+</ul>
+
+<hr>
+{{#link-to 'publishers'}}Back to all publishers{{/link-to}} <br>
+{{#link-to 'publishers.publisher.edit'}}Edit publisher{{/link-to}}

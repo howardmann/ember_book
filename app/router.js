@@ -10,6 +10,8 @@ Router.map(function() {
   this.route('publishers', function() {
     this.route('publisher', {
       path: ':publisher_id'
+    }, function() {
+      this.route('edit');
     });
     this.route('new');
   });

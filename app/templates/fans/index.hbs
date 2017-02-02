@@ -1,0 +1,6 @@
+<h2>ALL Fans</h2>
+{{#each model as |fan|}}
+  {{#link-to 'fans.fan' fan}}
+    <p>Name: {{fan.name}} | Age: {{fan.age}}</p>
+  {{/link-to}}
+{{/each}}

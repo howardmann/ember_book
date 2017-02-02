@@ -26,6 +26,11 @@ Router.map(function() {
       path: ':book_id'
     });
   });
+  this.route('fans', function() {
+    this.route('fan', {
+      path: ':fan_id'
+    });
+  });
 });
 
 export default Router;

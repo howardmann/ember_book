@@ -1,0 +1,12 @@
+<h2>SINGLE Fan</h2>
+<p>Name: {{model.name}}</p>
+<p>Age: {{model.age}}</p>
+<hr>
+<p><strong>Author</strong></p>
+<p>Name: {{#link-to 'authors.author' model.author}}{{model.author.name}}{{/link-to}}</p>
+<p>Age: {{model.author.age}}</p>
+<p><strong>Publisher</strong></p>
+{{#link-to 'publishers.publisher' model.author.publisher}}
+  <p>Name: {{model.author.publisher.name}}</p>
+{{/link-to}}
+<p>Country: {{model.author.publisher.country}}</p>
